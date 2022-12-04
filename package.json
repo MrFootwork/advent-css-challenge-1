@@ -1,0 +1,12 @@
+{
+	"name": "chellenge-1",
+	"version": "1.0.0",
+	"description": "In this project, we're creating a Pomodoro timer.",
+	"main": "app.js",
+	"scripts": {
+		"test": "test",
+		"sass": "sass --watch src/scss:public/stylesheets"
+	},
+	"author": "pandau",
+	"license": "ISC"
+}

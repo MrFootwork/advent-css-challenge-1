@@ -1,7 +1,9 @@
+@import 'colors/colors';
+
 body {
-  background: #2B2A30;
+  background: var(--main-bg-color);
 
   .setting {
-    background: red;
+    background: var(--ring-green);
   }
 }

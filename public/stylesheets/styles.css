@@ -1,8 +1,14 @@
+:root {
+  --main-bg-color: #2B2A30;
+  --ring-red: #9d0000;
+  --ring-green: #00aa51;
+}
+
 body {
-  background: #2B2A30;
+  background: var(--main-bg-color);
 }
 body .setting {
-  background: red;
+  background: var(--ring-green);
 }
 
 /*# sourceMappingURL=styles.css.map */

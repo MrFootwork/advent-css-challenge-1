@@ -9,13 +9,17 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="ring"></div>
+			<div class="ring">
+				<svg width="518" height="518" viewBox="0 0 518 518">
+					<circle stroke-width="9px" cx="259" cy="259" r="254" />
+				</svg>
+			</div>
 
 			<div class="timer">
 				<div class="time">
-					<div class="minutes"></div>
-					<div class="colon"></div>
-					<div class="seconds"></div>
+					<div class="minutes" value="15"></div>
+					<div class="colon">:</div>
+					<div class="seconds" value="00"></div>
 				</div>
 				<button class="start">start</button>
 				<button class="setting">
@@ -23,6 +27,7 @@
 				</button>
 			</div>
 		</div>
+
 		<script src="./app.js"></script>
 	</body>
 </html>

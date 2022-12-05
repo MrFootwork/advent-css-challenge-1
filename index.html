@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="ring">
+			<div class="ring ending">
 				<svg width="518" height="518" viewBox="0 0 518 518">
 					<circle stroke-width="9px" cx="259" cy="259" r="254" />
 				</svg>
@@ -17,13 +17,17 @@
 
 			<div class="timer">
 				<div class="time">
-					<div class="minutes" value="15"></div>
+					<div class="minutes">
+						<input type="text" name="minute" value="15" disabled />
+					</div>
 					<div class="colon">:</div>
-					<div class="seconds" value="00"></div>
+					<div class="seconds">
+						<input type="text" name="seconds" value="00" disabled />
+					</div>
 				</div>
 				<button class="start">start</button>
 				<button class="setting">
-					<img src="./STARTER/images/gear.svg" alt="Settings" />
+					<img src="./public/images/gear.svg" alt="Settings" />
 				</button>
 			</div>
 		</div>

@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 :root {
   --main-bg-color: #2B2A30;
   --ring-red: #9d0000;
   --ring-green: #00aa51;
 }
 
+@font-face {
+  font-family: "bebas";
+  src: url("./../../public/fonts/bebasneue-book-webfont.woff") format("woff"), url("./../../public/fonts/bebasneue-book-webfont.woff2") format("woff2");
+}
 body {
   background: var(--main-bg-color);
   padding: 0;
@@ -29,6 +34,9 @@ body .wrapper .ring {
   left: 0;
   top: 0;
   z-index: 1;
+  stroke: var(--ring-green);
+}
+body .wrapper .ring.ending {
   stroke: var(--ring-red);
 }
 body .wrapper .timer {
@@ -43,6 +51,53 @@ body .wrapper .timer {
   flex-direction: column;
   z-index: 2;
   position: relative;
+}
+body .wrapper .timer .time {
+  color: white;
+  font-family: "bebas";
+  display: flex;
+  font-size: 196px;
+  margin-bottom: 1.5rem;
+}
+body .wrapper .timer .time input[type=text] {
+  border: 0;
+  border-bottom: 1px dashed white;
+  background: none;
+  color: white;
+  font-family: "bebas";
+  font-size: 196px;
+  width: 150px;
+  height: 170px;
+  text-align: center;
+  outline: none;
+}
+body .wrapper .timer .time input[type=text]:disabled {
+  border: none;
+}
+body .wrapper .timer .start {
+  background: none;
+  border: none;
+  color: white;
+  opacity: 0.5;
+  font-family: "bebas";
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+body .wrapper .timer .start:hover {
+  opacity: 1;
+}
+body .wrapper .timer .setting {
+  background: none;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+body .wrapper .timer .setting:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

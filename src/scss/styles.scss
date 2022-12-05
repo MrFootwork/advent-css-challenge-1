@@ -1,5 +1,12 @@
 @import 'colors/colors';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face {
+  font-family: "bebas";
+  src        : url('./../../public/fonts/bebasneue-book-webfont.woff') format('woff'), url('./../../public/fonts/bebasneue-book-webfont.woff2') format('woff2');
+}
+
 body {
   background: var(--main-bg-color);
   padding   : 0;
@@ -30,7 +37,11 @@ body {
       left    : 0;
       top     : 0;
       z-index : 1;
-      stroke  : var(--ring-red)
+      stroke  : var(--ring-green);
+
+      &.ending {
+        stroke: var(--ring-red)
+      }
     }
 
     .timer {
@@ -42,6 +53,7 @@ body {
       height       : 500px;
       border-radius: 50%;
 
+
       display        : flex;
       align-items    : center;
       justify-content: center;
@@ -50,9 +62,71 @@ body {
       z-index : 2;
       position: relative;
 
+      .time {
+        color      : white;
+        font-family: "bebas";
+
+        display  : flex;
+        font-size: 196px;
+
+        margin-bottom: 1.5rem;
+
+        input[type="text"] {
+          border       : 0;
+          border-bottom: 1px dashed white;
+          background   : none;
 
 
+          color      : white;
+          font-family: "bebas";
+          font-size  : 196px;
+
+          width     : 150px;
+          height    : 170px;
+          text-align: center;
+
+          outline: none;
+
+          &:disabled {
+            border: none
+          }
+        }
+
+
+      }
+
+      .start {
+        background: none;
+        border    : none;
+
+        color         : white;
+        opacity       : .5;
+        font-family   : "bebas";
+        font-family   : 'Montserrat', sans-serif;
+        font-size     : 16px;
+        letter-spacing: 0.6em;
+        text-transform: uppercase;
+
+        margin-bottom: 1.5rem;
+        cursor       : pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .setting {
+        background: none;
+        border    : none;
+
+        opacity: .5;
+
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
-
   }
 }
